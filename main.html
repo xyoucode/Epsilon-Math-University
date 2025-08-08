@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html lang="en">
+ <head>
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport"     content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+
+    <meta name="title"       content=" Epsilon -Math university "> 
+    <meta name="description" content="منصة تعليمية متخصصة في الرياضيات لطلاب السنة الأولى الجامعية. دروس، تمارين، فيديوهات، دعم مباشر.">
+    <meta name="keywords"    content="رياضيات, جامعة, تحليل رياضي, Epsilon Math, دروس, تمارين, سنة أولى جامعي">
+    <meta name="author"      content=" Epsilon Math Team ">
+
+    <title>Epsilon -Math University</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+   
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta property="og:title"       content="Epsilon -Math university">
+    <meta property="og:description" content="  منصة تعلمية متحصصة في الرياضيات لطلاب الجامعة">
+    <meta property="og:image"       content="success-3195027_960_720.jpg">
+    <meta property="og:url"         content="https://example.com"> 
+    <meta name="twitter:card"       content="summary_large_image">
+
+ </head>
+  <body oncontextmenu="return false;">
+
+    <p class="name"> 
+      Epsilon Math University : "The life of glory is worth enduring a moment of pain" | حياة المجد تستحق لحظة الم 
+    </p>
+
+      <div class="top-links">
+        <a href="main.html">Home</a>
+        <a href="Contactus.html">Contact us</a>
+        <a href="courses.html">Courses</a>
+        <a href="library.html">Libraey</a>
+      </div>
+
+      <div class="mobile-menu">
+         <button class="menu-toggle">&#9776;</button>
+        <div class="mobile-links">
+          <a href="main.html">Home</a>
+          <a href="Contactus.html">Contact us</a>
+          <a href="courses.html">Courses</a>
+          <a href="library.html">Library</a>
+        </div>
+      </div>
+   
+    <h1 class="welcome">
+     Welcome to the Epsilon University Mathematics website
+    </h1>
+
+    <h3 class="sub-welcome">
+     Every idea here is an equation waiting to be solved. 
+    </h3>          
+    
+    <div class="image">
+      <a href="https://cscan.co/sl/5yWkbEVjPl?openbylink=0" target="_blank" title="pdf"><img src="ph1.jpeg"></a>
+      <a href="https://cscan.co/sl/5yWkbEVjPl?openbylink=0" target="_blank" title="pdf"><img src="ph2.jpeg"></a>
+      <a href="https://cscan.co/sl/5yWkbEVjPl?openbylink=0" target="_blank" title="pdf"><img src="ph3.jpeg"></a>
+      <a href="https://cscan.co/sl/5yWkbEVjPl?openbylink=0" target="_blank" title="pdf"><img src="ph4.jpeg"></a>
+      <a href="https://cscan.co/sl/5yWkbEVjPl?openbylink=0" target="_blank" title="pdf"><img src="ph5.jpeg"></a>
+      <a href="https://cscan.co/sl/5yWkbEVjPl?openbylink=0" target="_blank" title="pdf"><img src="ph6.jpeg"></a>
+    </div>
+
+    <footer class="site-footer">
+      All rights reserved © 2025 - Epsilon Math University | Epsilon Math University™
+    </footer>
+
+<div id="image-popup" class="popup">
+  <span class="close" onclick="closePopup()">&times;</span>
+  <img class="popup-content" id="popup-img">
+</div>
+
+<script>
+  const popup = document.getElementById("image-popup");
+  const popupImg = document.getElementById("popup-img");
+
+  document.querySelectorAll(".image a img").forEach(img => {
+    img.addEventListener("click", function (e) {
+      e.preventDefault();
+      popup.style.display = "block";
+      popupImg.src = this.src;
+    });
+  });
+
+  function closePopup() {
+    popup.style.display = "none";
+  }
+
+  window.addEventListener("click", function (e) {
+    if (e.target == popup) {
+      popup.style.display = "none";
+    }
+  });
+</script>
+
+<script>
+  const toggleButton = document.querySelector(".menu-toggle");
+  const mobileLinks = document.querySelector(".mobile-links");
+
+  toggleButton.addEventListener("click", () => {
+    mobileLinks.style.display = mobileLinks.style.display === "flex" ? "none" : "flex";
+  });
+</script>
+
+<script>
+  const images = document.querySelectorAll(".image a img");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  images.forEach(img => {
+    observer.observe(img);
+  });
+</script>
+
+<script>
+function showWarningAndExit() {
+    alert("Access to source code is not allowed!");
+    window.location.href = "about:blank"; 
+}
+
+document.addEventListener("keydown", function(e) {
+   
+    if (e.key === "F12") {
+        e.preventDefault();
+        showWarningAndExit();
+    }
+    
+    if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) {
+        e.preventDefault();
+        showWarningAndExit();
+    }
+   
+    if (e.ctrlKey && e.key.toLowerCase() === "u") {
+        e.preventDefault();
+        showWarningAndExit();
+    }
+});
+
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+    showWarningAndExit();
+});
+
+setInterval(function() {
+    let threshold = 160;
+    if (window.outerWidth - window.innerWidth > threshold || 
+        window.outerHeight - window.innerHeight > threshold) {
+        showWarningAndExit();
+    }
+}, 1000);
+</script>
+
+  </body>
+</html>
+    
+      
+
+

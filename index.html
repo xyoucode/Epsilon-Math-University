@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html lang="en">
+ <head>
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport"     content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+
+    <meta name="title"       content=" Epsilon -Math university "> 
+    <meta name="description" content="منصة تعليمية متخصصة في الرياضيات لطلاب السنة الأولى الجامعية. دروس، تمارين، فيديوهات، دعم مباشر.">
+    <meta name="keywords"    content="رياضيات, جامعة, تحليل رياضي, Epsilon Math, دروس, تمارين, سنة أولى جامعي">
+    <meta name="author"      content=" Epsilon Math Team ">
+
+    <title>Epsilon -Math University</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+ 
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="E.M.U">
+    <link rel="apple-touch-icon" href="icon-192.png">
+   
+    <meta name="apple-mobile-web-app-capable" content="yes">
+   
+    <meta property="og:title"       content="Epsilon -Math university">
+    <meta property="og:description" content="  منصة تعلمية متحصصة في الرياضيات لطلاب الجامعة">
+    <meta property="og:image"       content="success-3195027_960_720.jpg">
+    <meta property="og:url"         content="https://example.com"> 
+    <meta name="twitter:card"       content="summary_large_image">
+
+ </head>
+  <body oncontextmenu="return false;">
+ 
+  <video autoplay muted loop id="video-bg">
+    <source src="pop.mp4" type="video/mp4">
+  </video>
+  <div class="welcome-popup" id="welcome-popup">
+    <div class="popup-content">
+      <h2>welcome to Epsilon Math University 🎓</h2>
+      <p>AI-Powered university Mathematics Platform</p>
+      <button onclick="closePopup()">start now</button>
+    </div>
+  </div>
+  <div class="math-overlay">
+    ∑ ∫ π √ ∞ Δ ⊕ ⊗ ∂
+  </div>
+  <p class="name">
+    Epsilon -Math University
+  </p>
+  <h1>
+    University <span> Mathematics </span> Platform
+  </h1>
+  <p class="par">
+    Here begins the true understanding of mathematics
+    <br>We provide you with organized lessons - precise explanations, and solved exercises in a simplified and professional style.
+    <br>We dive into analysis... algebra + probability, and logic. 
+    <br> Mathematics turns from a complex into a pleasure
+  </p>
+  <button class="cn" onclick="this.disabled = true; this.innerText = 'Loading...'; window.location.href='main.html';">
+    Explore our site
+  </button>
+  <script>
+    function closePopup() {
+      document.getElementById("welcome-popup").style.display = "none";
+    }
+  </script>
+<script>
+
+function showWarningAndExit() {
+    alert("Access to source code is not allowed!");
+    window.location.href = "about:blank"; 
+}
+document.addEventListener("keydown", function(e) {
+   
+    if (e.key === "F12") {
+        e.preventDefault();
+        showWarningAndExit();
+    }
+  
+    if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) {
+        e.preventDefault();
+        showWarningAndExit();
+    }
+    if (e.ctrlKey && e.key.toLowerCase() === "u") {
+        e.preventDefault();
+        showWarningAndExit();
+    }
+});
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+    showWarningAndExit();
+});
+setInterval(function() {
+    let threshold = 160;
+    if (window.outerWidth - window.innerWidth > threshold || 
+        window.outerHeight - window.innerHeight > threshold) {
+        showWarningAndExit();
+    }
+}, 1000);
+</script>
+
+</body>
+</html>

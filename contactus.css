@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+.name {
+  padding: 15px 30px;
+  color:  #39f5eb;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+.top-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 0;
+  border-bottom: 2px solid  #00ffff;
+}
+
+.top-links a {
+  color: white ;
+  text-decoration: none;
+  font-size: 1.1em;
+  position: relative;
+  padding: 5px 30px;
+  transition: color 0.3s;
+}
+
+.top-links a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: rgb(1, 247, 255);
+  transition: width 0.3s;
+}
+
+.top-links a:hover {
+  color: #00f8e3;
+}
+
+.top-links a:hover::before {
+  width: 100%;
+}
+
+.mobile-menu {
+  display: none; 
+  position: relative;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px #39f5eb;
+  z-index: 999;
+}
+
+.mobile-links a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 5px 30px;
+  display: block;
+}
+
+.mobile-links a:hover {
+  color: #39f5eb;
+}
+
+@media (max-width: 600px) {
+  .top-links {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.welcome {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 50px 20px 10px;
+  color: #39f5eb;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ccc;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.95em;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-container {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.icon.instagram {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png');
+}
+
+.icon.youtube {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1384/1384060.png');
+}
+
+.icon.telegram {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111646.png');
+}
+
+.icon.email {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/732/732200.png');
+}
+
+.icon.facebook {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/733/733547.png');
+}
+
+.icon.instagram:active {
+  background-color: #e1306c;
+}
+
+.icon.youtube:active {
+  background-color: #ff0000;
+}
+
+.icon.telegram:active {
+  background-color: #0088cc;
+}
+
+.icon.email:active {
+  background-color: #f2a60c;
+}
+
+.icon.facebook:active {
+  background-color: #1877f2;
+}
+
+@media (max-width: 600px) {
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .name {
+    display: none;
+  }
+}
